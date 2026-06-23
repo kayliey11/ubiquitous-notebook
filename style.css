@@ -401,3 +401,50 @@
       text-align: center;
     }
   }
+
+/* ===== Clickable Page Links ===== */
+
+.page-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.page-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.86;
+}
+
+/* ===== Subpage Header ===== */
+
+.subpage-header {
+  padding: 78px 24px 120px;
+}
+
+/* ===== Timeline Styling ===== */
+
+.timeline-entry {
+  margin: 34px 0;
+  padding-left: 20px;
+  border-left: 1px solid rgba(246, 200, 223, 0.35);
+}
+
+.timeline-date {
+  font-size: 12.5px;
+  color: #f6c8df;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+}
+
+.timeline-entry h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #fffaf7;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 14px rgba(255, 190, 220, 0.24);
+}
+
+.timeline-entry p {
+  margin-top: 0;
+}
