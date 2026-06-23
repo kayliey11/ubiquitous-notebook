@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCR Efficacy Prediction | Kaylie Yuen</title>
+  <link rel="icon" type="image/png" href="assets/lotus_art.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <header class="subpage-header">
+    <h1>TCR Efficacy Prediction</h1>
+    <p>A timeline of my work on molecular dynamics, machine learning, and computational immunology.</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This project focuses on improving a machine learning model that predicts T-cell receptor
+        efficacy using features derived from molecular dynamics simulations, including contacts,
+        correlations, hydrogen bonds, and future salt bridge features.
+      </p>
+    </section>
+
+    <section>
+      <h2>Timeline</h2>
+
+      <div class="timeline-entry">
+        <p class="timeline-date">June 2026</p>
+        <h3>Started understanding the project background</h3>
+        <p>
+          Read through project posters and prior materials to understand the biological motivation:
+          predicting which TCRs may be most effective at reducing tumor size.
+        </p>
+      </div>
+
+      <div class="timeline-entry">
+        <p class="timeline-date">June 2026</p>
+        <h3>Explored Stella’s GitHub repository</h3>
+        <p>
+          Reviewed the previous model pipeline, including how contact, correlation, and hydrogen bond
+          features were organized and used for classification.
+        </p>
+      </div>
+
+      <div class="timeline-entry">
+        <p class="timeline-date">June 2026</p>
+        <h3>Reproduced the baseline model</h3>
+        <p>
+          Worked with XGBoost and related machine learning models to reproduce prior predictions and
+          better understand thresholds, labels, features, and performance metrics.
+        </p>
+      </div>
+
+      <div class="timeline-entry">
+        <p class="timeline-date">Next steps</p>
+        <h3>Add salt bridge features</h3>
+        <p>
+          Develop a feature extraction workflow for salt bridges and compare model performance with
+          and without this new molecular interaction feature.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Open Questions</h2>
+
+      <div class="card">
+        <h3>Feature engineering</h3>
+        <p>
+          How should salt bridge persistence, frequency, and residue-pair identity be summarized for model input?
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Model evaluation</h3>
+        <p>
+          Should evaluation be done by row-level split, TCR-level split, or another structure that better prevents leakage?
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Biological interpretation</h3>
+        <p>
+          Which molecular interactions are most plausibly related to therapeutic efficacy?
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Kaylie Yuen</p>
+  </footer>
+</body>
+</html>
